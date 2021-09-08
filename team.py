@@ -9,7 +9,7 @@ class Team:
     def generate_matches(self, input_matches):
         self.matches = [match for match in input_matches if self in match["red_alliance"] or self in match["blue_alliance"]]
 
-    def generate_sheet(self, current_sheet, provided_by=None):
+    def generate_sheet(self, current_sheet, provided_by):
         thick = Side(border_style="thick")
         thin = Side(border_style="thin")
 
